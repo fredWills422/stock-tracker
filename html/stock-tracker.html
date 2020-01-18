@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="/stock-tracker/js/stock-tracker.js"></script>
+    <title>Stock-Tracker</title>
+</head>
+<body>
+    <h3>Share Maintance: </h3>
+    <table>
+        
+        <tr>
+            <td>Symbol</td>
+            <td><input id="pSymbol" type="text" placeholder="Symbol"></td>
+        </tr>
+        
+        <tr>
+            <td>Name</td>
+            <td>
+                <input id="pName" type="text" placeholder="Name">
+            </td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>
+                <input id="pLocation" type="text" placeholder="Location">
+            </td>
+        </tr>
+        <tr>
+            <td>Current</td>
+            <td><input id="pCurrent" type="number" placeholder="Current"></td>
+        </tr>
+        <tr>
+            <td>Paid</td>
+            <td><input id="pPaid" type="number" placeholder="Paid"></td>
+        </tr>
+        <tr>
+            <td>Gain/Loss</td>
+            <td><input id="pGainLoss" type="number" placeholder="Gain/Loss"></td>
+        </tr>
+        <tr>
+            <td>Shares</td>
+            <td><input id="pNbrOfShares" type="number" placeholder="Shares"></td>
+        </tr>
+        <tr>
+            <td>Value</td>
+            <td><input id="pValue" type="number" placeholder="Value"></td>
+        </tr>
+        <tr>
+            <td><button id="save">Save</button></td>
+            <td><button id="delete">Delete</button></td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Share Listing</h3>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <td>Symbol</td>
+                <td>Name</td>
+                <td>Location</td>
+                <td>Current</td>
+                <td>Paid</td>
+                <td>Gain/Loss</td>
+                <td>Shares</td>
+                <td>Value</td>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+    
+        </tbody>
+    </table>
+    
+</body>
+</html>
